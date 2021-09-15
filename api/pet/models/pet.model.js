@@ -51,8 +51,6 @@ exports.patchPet = (id, PetData) => {
   return new Promise((resolve, reject) => {
     Pet.findById(id, function (err, pet) {
       if (err) reject(err);
-
-      console.log(PetData);
       for (let i in PetData) {
         pet[i] = PetData[i];
       }
@@ -65,7 +63,7 @@ exports.patchPet = (id, PetData) => {
 };
 exports.removeById = (PetId) => {
   return new Promise((resolve, reject) => {
-    Productos.remove({ _id: PetId }, (err) => {
+    Pet.remove({ _id: PetId }, (err) => {
       if (err) {
         reject(err);
       } else {

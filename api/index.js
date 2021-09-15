@@ -33,3 +33,4 @@ app.listen(config.port, function () {
     console.log(`api listening to port ${config.port}`);
 });
 
+module.exports = app;

@@ -53,8 +53,6 @@ exports.patchUser = (id, UserData) => {
   return new Promise((resolve, reject) => {
     User.findById(id, function (err, user) {
       if (err) reject(err);
-
-      console.log(UserData);
       for (let i in UserData) {
         user[i] = UserData[i];
       }
@@ -67,7 +65,7 @@ exports.patchUser = (id, UserData) => {
 };
 exports.removeById = (UserId) => {
   return new Promise((resolve, reject) => {
-    Productos.remove({ _id: UserId }, (err) => {
+    User.remove({ _id: UserId }, (err) => {
       if (err) {
         reject(err);
       } else {
