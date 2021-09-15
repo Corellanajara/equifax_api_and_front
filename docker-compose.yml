@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nodejs-server:
+    build:
+      context: .
+    ports:
+      - "8081:8081"
+    container_name: nodejs-api
+    volumes:
+       - ./src:/usr/src/app/src      

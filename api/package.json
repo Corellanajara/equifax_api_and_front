@@ -1,0 +1,19 @@
+{
+  "name": "apiequifax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/auth-basic": "^1.4.2",
+    "@octokit/rest": "^17.2.0",
+    "@rxjs/rx": "^4.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7"
+  }
+}
